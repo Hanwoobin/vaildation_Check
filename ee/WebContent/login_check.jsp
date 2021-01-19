@@ -17,6 +17,8 @@
 		String name = rs.getString("name");
 		session.setAttribute("name", name);
 		session.setAttribute("id", ID);
+		String GT = rs.getString("GT");
+		session.setAttribute("GT", GT);
 		msg = "./main.jsp";
 	}
 	response.sendRedirect(msg);

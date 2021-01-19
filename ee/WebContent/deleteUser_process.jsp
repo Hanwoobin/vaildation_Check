@@ -14,7 +14,7 @@
 	pstmt.setString(1, id);
 	
 	pstmt.executeQuery();
-	
-	response.sendRedirect("./all_member.jsp");
+	session.invalidate();
+	response.sendRedirect("./main.jsp");
 
 %>
