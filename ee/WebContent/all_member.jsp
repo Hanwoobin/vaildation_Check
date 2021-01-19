@@ -21,7 +21,7 @@
 	<div class="text-center">
 		<button class="btn btn-success" onclick="location.href='./main.jsp'">메인페이지</button>
 		<div class="container">
-			<table border="1" style="width:100%;">
+			<table border="1" style="width:100%; text-align: center;">
 				<tr>
 					<td>ID</td>
 					<td>password</td>
@@ -60,8 +60,8 @@
 					<td><%=rs.getString("email")%></td>
 					<td><%=rs.getString("gender")%></td>
 					<td><%=GT%></td>
-					<td><button class = "btn btn-danger" onclick="deleteConfirm('<%=rs.getString("id")%>')">삭제</button>
-						<button class = "btn btn-info"
+					<td><button class = "btn btn-danger"style ="width: 48%;" onclick="deleteConfirm('<%=rs.getString("id")%>')">삭제</button>
+						<button class = "btn btn-info" style ="width: 48%;"
 							onclick="location.href = 'update.jsp?id=<%=rs.getString("id")%>'">수정</button>
 					</td>
 				</tr>
