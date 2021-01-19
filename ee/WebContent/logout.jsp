@@ -1,4 +1,4 @@
 <%
-session.removeAttribute("name");
+session.invalidate();
 response.sendRedirect("./main.jsp");
 %>
