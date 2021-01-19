@@ -33,7 +33,7 @@
 				<p>password : <input type ="password" name = "password"placeholder="Password를 입력해주세요"></p>
 				<p>이름 : <input type ="text" name = "name" placeholder="이름을 입력해주세요"></p>
 				<p>email : <input type = "email" name = "email" placeholder="email을 적어주세요"></p>
-				<p>성별 : <input type = "radio" name = "gender" value ="남자">남자
+				<p>성별 : <input type = "radio" name = "gender" value ="남자" checked>남자
 						<input type = "radio" name = "gender" value = "여자">여자</p>
 				<button class = "btn btn-info" onclick="check()">회원가입</button>
 			</form>

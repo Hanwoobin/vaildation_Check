@@ -10,14 +10,19 @@ String id = request.getParameter("id");
 String password = request.getParameter("password");
 String name = request.getParameter("name");
 String email = request.getParameter("email");
+String gender = request.getParameter("gender");
+String GT = request.getParameter("GT");
 
-String sql = "update e2_user set password = ?, name = ?, email = ? where id = ?";
+
+String sql = "update e2_user set password = ?, name = ?, email = ?, gender = ? ,GT=?where id = ?";
 
 pstmt = conn.prepareStatement(sql);
 pstmt.setString(1, password);
 pstmt.setString(2, name);
 pstmt.setString(3, email);
-pstmt.setString(4, id);
+pstmt.setString(4, gender);
+pstmt.setString(5, GT);
+pstmt.setString(6, id);
 
 pstmt.executeUpdate();
 String msg = "./all_member.jsp";

@@ -15,6 +15,7 @@
 </script>
 </head>
 <body>
+	<button onclick="location.href='./main.jsp'">메인페이지</button>
 	<table border="1">
 		<tr>
 			<td>ID</td>

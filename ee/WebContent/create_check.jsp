@@ -14,7 +14,7 @@ request.setCharacterEncoding("UTF-8");
 	String email = request.getParameter("email");
 	String gender = request.getParameter("gender");
 	
-	String sql = "insert into e2_user values(?,?,?,?,?)";
+	String sql = "insert into e2_user values(?,?,?,?,?,?)";
 	
 	try {
 		pstmt = conn.prepareStatement(sql);
@@ -23,6 +23,7 @@ request.setCharacterEncoding("UTF-8");
 		pstmt.setString(3, name);
 		pstmt.setString(4, email);
 		pstmt.setString(5, gender);
+		pstmt.setString(6, "1");
 		pstmt.executeQuery();
 		msg = "./result.jsp?id="+id;
 	}catch (Exception e ){
